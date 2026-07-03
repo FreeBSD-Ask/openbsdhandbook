@@ -14,7 +14,7 @@ OpenBSD 是一款完整、自洽的类 Unix 操作系统，作为一个整体来
 - **安全工程。** 主动代码审计、权限分离与漏洞缓解是标准做法。应用沙箱 [pledge(2)](https://man.openbsdhandbook.com/pledge.2/) 与 [unveil(2)](https://man.openbsdhandbook.com/unveil.2/) 已包含在基本系统中。
 - **实用的默认配置。** PF 防火墙通过 [pf.conf(5)](https://man.openbsdhandbook.com/pf.conf.5/) 配置。精简的 Web 服务器（[httpd(8)](https://man.openbsdhandbook.com/httpd.8/)）使用 [httpd.conf(5)](https://man.openbsdhandbook.com/httpd.conf.5/)。其他基本组件还包括 [relayd(8)](https://man.openbsdhandbook.com/relayd.8/)、[smtpd(8)](https://man.openbsdhandbook.com/smtpd.8/)、[bgpd(8)](https://man.openbsdhandbook.com/bgpd.8/) 与 OpenSSH。
 - **文档优先。** 手册页权威且完整，从 [man(1)](https://man.openbsdhandbook.com/man.1/) 起步。包管理从 [pkg\_add(1)](https://man.openbsdhandbook.com/pkg_add.1/) 开始。
-- **可预期的发布。** 大约每六个月发布一个新版本。二进制补丁通过 [syspatch(8)](https://man.openbsdhandbook.com/syspatch.8/) 应用。版本之间的升级可用 [sysupgrade(8)](https://man.openbsdhandbook.com/sysupgrade.8/) 自动完成。
+- **可预期的发布。** 大约每六个月发布新版本。二进制补丁通过 [syspatch(8)](https://man.openbsdhandbook.com/syspatch.8/) 应用。版本之间的升级可用 [sysupgrade(8)](https://man.openbsdhandbook.com/sysupgrade.8/) 自动完成。
 
 ## 优势与权衡
 
@@ -22,7 +22,7 @@ OpenBSD 偏好安全、可理解的设计，而非功能堆砌。基本系统小
 
 ## 如何使用本手册
 
-本手册在工作流、背景说明与注意事项方面对手册页进行补充。各章节会引用相关手册页，并附上经过测试的示例。约定如下：
+本手册在工作流、背景说明与注意事项方面补充手册页。各章节会引用相关手册页，并附上经过测试的示例。约定如下：
 
 - Shell 提示符：`$` 表示普通用户；`#` 表示超级用户（通常通过 `doas` 获得，参见 [doas(1)](https://man.openbsdhandbook.com/doas.1/)）。
 - 命令输出与配置片段按实际输入或生成的样子呈现。

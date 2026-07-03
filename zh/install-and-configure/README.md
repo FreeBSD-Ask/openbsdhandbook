@@ -11,7 +11,7 @@ OpenBSD 手册第一部分介绍开始有效使用 OpenBSD 所需的基本概念
 - [OpenBSD Basics](basics.md)
   初始系统使用指南，包括登录流程、文件系统导航、用户管理以及 OpenBSD 安全模型概述。
 - [System Configuration](system-configuration.md)
-  `sysctl`、`rcctl`、`wsconsctl` 等关键系统配置工具概述，以及 `/etc` 下重要配置文件的说明。
+  `sysctl`、`rcctl`、`wsconsctl` 等关键系统配置工具概述，以及 **/etc** 下重要配置文件的说明。
 - [Networking](networking.md)
   配置网络接口、启用有线与无线连接、设置 IPv6 的分步指南。
 - [Managing Software: Packages and Ports](ports.md)
