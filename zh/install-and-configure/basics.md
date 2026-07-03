@@ -242,7 +242,7 @@ drwxrwxrwt  10 root  wheel  5120 Jul 11 15:10 /tmp
 - `chmod 2755` → setgid + `755`
 - `chmod 1777` → sticky + `777`
 
-请谨慎使用这些位：它们会影响安全与进程行为。
+请谨慎使用这些位：这些位会影响安全与进程行为。
 
 ## Shell 配置
 

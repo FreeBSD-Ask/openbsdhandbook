@@ -66,7 +66,7 @@ OpenBSD 手册提供更高层次的解释、结构化指引与上下文信息—
 
 ## Community and Support
 
-OpenBSD 维持着一个规模不大但技术过硬的社区。项目不设官方论坛或面向用户的支持机构。交流主要通过 `misc@openbsd.org` 等邮件列表进行，实时交流则在 Libera.Chat 的 `#openbsd` 等 IRC 频道。
+OpenBSD 维持着规模不大但技术过硬的社区。项目不设官方论坛或面向用户的支持机构。交流主要通过 `misc@openbsd.org` 等邮件列表进行，实时交流则在 Libera.Chat 的 `#openbsd` 等 IRC 频道。
 
 提问应具体、做过功课，并附上相关系统输出。社区文化推崇自力更生、完善文档与可复现的缺陷报告。
 
@@ -87,7 +87,7 @@ OpenBSD 是一款通用操作系统，强调正确性、代码清晰与安全。
   - 用 `httpd(8)` 或 `relayd(8)` 搭建 Web 服务器
   - 用 `smtpd(8)` 搭建邮件服务器
   - 用 `nsd(8)` 与 `unbound(8)` 提供 DNS 解析器与权威域名服务器
-  - 通过 SSH 用 `sftp`、`scp` 或 `rsync` 进行安全文件传输
+  - 通过 SSH 用 `sftp`、`scp` 或 `rsync` 安全地传输文件
   - 用 `ipsecctl(8)` 或 `openiked(8)` 搭建 VPN 端点
 - **网络基础设施**：OpenBSD 可作为可靠、可维护的路由系统的基础：
 
