@@ -1,6 +1,7 @@
 # 目录
 
 * [OpenBSD 手册](README.md)
+* [目录](mu-lu.md)
 * [第一部分 安装与配置](install-and-configure/README.md)
   * [引言](install-and-configure/introduction.md)
   * [安装 OpenBSD](install-and-configure/installation.md)
