@@ -2,18 +2,20 @@
 
 你现在看到的是 OpenBSD 手册中文翻译项目。原作者项目地址：<https://www.openbsdhandbook.com/>，作者佚名。本项目采用 2 条款 BSD 协议发布。部分内容可能已经过时，欢迎提交 PR 更新。
 
+---
+
 > **“Linux 世界如此行事，是因为他们讨厌微软；我们如此行事，是因为我们热爱 Unix。”**
 >
-> —— Theo de Raadt
+> —— Theo de Raadt（OpenBSD 创始人）
 
-OpenBSD 手册是面向系统管理员的实用参考。本书注重讲解清晰、假设最少，并提供可直接复制粘贴的示例。目标是在服务器、嵌入式设备与工作站上稳定地安装、加固并运行 OpenBSD 7.8。
+OpenBSD 手册是面向系统管理员的实用参考。本书注重讲解清晰、假设最少，并提供可直接复制粘贴的示例。目标是在服务器、嵌入式设备与工作站上稳定地安装、加固运行 OpenBSD 7.8。
 
 ## OpenBSD 的不同之处
 
-OpenBSD 是一款完整、自洽的类 Unix 操作系统，作为一个整体来维护。项目把简洁、正确与安全放在首位。
+OpenBSD 是一款完整、自洽的类 Unix 操作系统，作为整体来维护。项目把简洁、正确与安全放在首位。
 
 - **自洽的基本系统。** 内核、用户态、工具链与核心守护进程一同开发。诸如 [rcctl(8)](https://man.openbsdhandbook.com/rcctl.8/) 之类的管理接口在各服务之间保持一致。
-- **安全工程。** 主动代码审计、权限分离与漏洞缓解是标准做法。应用沙箱 [pledge(2)](https://man.openbsdhandbook.com/pledge.2/) 与 [unveil(2)](https://man.openbsdhandbook.com/unveil.2/) 已包含在基本系统中。
+- **安全工程。** 主动代码审计、权限分离与漏洞缓解是标准做法。应用沙箱 [pledge(2)](https://man.openbsdhandbook.com/pledge.2/) 与 [unveil(2)](https://man.openbsdhandbook.com/unveil.2/) 内置于基本系统。
 - **实用的默认配置。** PF 防火墙通过 [pf.conf(5)](https://man.openbsdhandbook.com/pf.conf.5/) 配置。精简的 Web 服务器（[httpd(8)](https://man.openbsdhandbook.com/httpd.8/)）使用 [httpd.conf(5)](https://man.openbsdhandbook.com/httpd.conf.5/)。其他基本组件还包括 [relayd(8)](https://man.openbsdhandbook.com/relayd.8/)、[smtpd(8)](https://man.openbsdhandbook.com/smtpd.8/)、[bgpd(8)](https://man.openbsdhandbook.com/bgpd.8/) 与 OpenSSH。
 - **文档优先。** 手册页权威且完整，从 [man(1)](https://man.openbsdhandbook.com/man.1/) 起步。包管理从 [pkg\_add(1)](https://man.openbsdhandbook.com/pkg_add.1/) 开始。
 - **可预期的发布。** 大约每六个月发布新版本。二进制补丁通过 [syspatch(8)](https://man.openbsdhandbook.com/syspatch.8/) 应用。版本之间的升级可用 [sysupgrade(8)](https://man.openbsdhandbook.com/sysupgrade.8/) 自动完成。
