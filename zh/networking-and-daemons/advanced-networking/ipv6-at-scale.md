@@ -65,15 +65,15 @@ EOF
 每个 L2 上通告一个 /64。包含 RDNSS 与 DNSSL，使主机通过 RA 学习 DNS 设置。
 
 ```
-## /etc/rad.conf — advertise /64s and DNS on two interfaces
+## /etc/rad.conf — 在两个接口上通告 /64 与 DNS
 
-# LAN-A (VLAN 10)
+# LAN-A（VLAN 10）
 interface em1
     prefix 2001:db8:10:10::/64
     rdnss 2001:db8:10:10::53
     dnssl example.internal
 
-# LAN-B (VLAN 20)
+# LAN-B（VLAN 20）
 interface em2
     prefix 2001:db8:10:20::/64
     rdnss 2001:db8:10:20::53
@@ -95,7 +95,7 @@ OpenBSD 主机使用 [slaacd(8)](https://man.openbsdhandbook.com/slaacd.8/)
 根据 RA 生成地址。请确保接口请求自动配置。
 
 ```
-## /etc/hostname.em1 on a host
+## /etc/hostname.em1（主机端）
 inet6 autoconf
 up
 ```
@@ -111,7 +111,7 @@ up
 放行必需的 ICMPv6，允许 LAN 流量，并应用保守的 scrub 以稳定 PMTU。请按安全模型调整。
 
 ```pf
-## /etc/pf.conf — minimal IPv6 allowances
+## /etc/pf.conf — 最小化 IPv6 放行规则
 
 set skip on lo
 
@@ -120,16 +120,16 @@ wan = "em0"
 
 block all
 
-# ICMPv6 is mandatory for ND and PMTU; allow it on all interfaces
+# ICMPv6 对 ND 与 PMTU 必不可少；在所有接口上放行
 pass inet6 proto icmp6 keep state
 
-# Permit LAN IPv6; constrain further per policy
+# 放行 LAN IPv6；按策略进一步收敛
 pass in on $lan inet6 from { 2001:db8:10:10::/64, 2001:db8:10:20::/64 } to any keep state
 
-# Outbound to WAN
+# 出站至 WAN
 pass out on $wan inet6 from any to any keep state
 
-# Conservative scrub to avoid PMTU black holes during rollout
+# 保守的 scrub，避免部署期间出现 PMTU 黑洞
 scrub in on $wan inet6
 ```
 

@@ -178,7 +178,7 @@ subnet 10.10.10.0 netmask 255.255.255.0 {
 
 在 LAN 上提供内部 NTP 源，并保持服务器自身时间正确。
 
-```
+```sh
 ## /etc/ntpd.conf — 服务 LAN 并从上游池同步
 
 listen on 10.10.10.1

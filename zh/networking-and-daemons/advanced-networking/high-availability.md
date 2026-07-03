@@ -123,17 +123,17 @@ EOF
 
 set skip on { lo, pfsync0 }
 
-# Interfaces
+# 接口
 wan = "em0"
 lan = "em1"
 sync = "em2"
 
-# Allow control-plane for HA
+# 放行 HA 控制平面
 pass on $wan proto carp
 pass on $lan proto carp
 pass on $sync proto pfsync
 
-# Example policy (tighten for production)
+# 示例策略（生产环境须收紧）
 block all
 pass on $lan
 pass out on $wan proto { tcp udp icmp } from ($wan) to any keep state
