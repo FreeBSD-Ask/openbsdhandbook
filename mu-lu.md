@@ -114,4 +114,3 @@
   * [Linux 用户视角的 OpenBSD](miscellaneous/openbsd-for-linux-users.md)
   * [FreeBSD 用户视角的 OpenBSD](miscellaneous/openbsd-for-freebsd-users.md)
   * [macOS 用户视角的 OpenBSD](miscellaneous/openbsd-for-macos-users.md)
-* [软件包搜索](package-search.md)
