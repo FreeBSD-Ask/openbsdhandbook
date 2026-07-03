@@ -59,15 +59,15 @@ LAN：
 在 PF 中于 WAN 上放行封装协议。按需调整接口与策略。
 
 ```pf
-## /etc/pf.conf — underlay allowances for lightweight tunnels
+## /etc/pf.conf — 轻量隧道的底层放行规则
 
 set skip on lo
-wan = "em0"   # adjust to your WAN interface
+wan = "em0"   # 请根据实际 WAN 接口调整
 
 block all
 pass out on $wan keep state
 
-# Encapsulation protocols (permit from known peer for tighter policy)
+# 封装协议（为更严格策略，可限定已知对端）
 pass in on $wan proto { 4, 47, 97 } from 203.0.113.10 to ($wan) keep state
 pass out on $wan proto { 4, 47, 97 } to 203.0.113.10 keep state
 ```

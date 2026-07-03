@@ -26,7 +26,7 @@ tty00   "/usr/libexec/getty std.9600"   vt220   on secure
 
 此命令向 `init(8)` 进程发送信号，使其重新加载配置并在指定线路上启动 `getty`。
 
-确保串口未被其他进程占用。可用 `fstat` 或 `ps` 确认。
+确保没有其他进程占用串口。可用 `fstat` 或 `ps` 确认。
 
 ## 使用 cu 与 tip
 
@@ -121,7 +121,7 @@ ucom0 at uplcom0
 
 ## 测试串口
 
-串口可用多种技术进行测试。
+串口可用多种技术测试。
 
 ### 检查设备是否存在
 
@@ -131,7 +131,7 @@ ucom0 at uplcom0
 # ls -l /dev/tty00
 ```
 
-### 进行环回测试
+### 环回测试
 
 物理连接发送与接收引脚（如 DB9 接口的 2、3 脚），然后：
 
@@ -256,7 +256,7 @@ uplcom0 at uhub1 port 3: Prolific USB-Serial Controller
 ucom0 at uplcom0
 ```
 
-在 OpenBSD 系统与被管理设备之间使用正确的空调制解调器线缆。
+在 OpenBSD 系统与受管理设备之间使用正确的空调制解调器线缆。
 
 ### 连接设备
 
