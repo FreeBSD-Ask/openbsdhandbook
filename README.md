@@ -1,5 +1,7 @@
 # OpenBSD 手册
 
+你现在看到的是 OpenBSD 手册中文翻译项目。原作者项目地址：<https://www.openbsdhandbook.com/>，作者佚名。本项目采用 2 条款 BSD 协议发布。部分内容可能已经过时，欢迎提交 PR 更新。
+
 > **“Linux 世界如此行事，是因为他们讨厌微软；我们如此行事，是因为我们热爱 Unix。”**
 >
 > —— Theo de Raadt
