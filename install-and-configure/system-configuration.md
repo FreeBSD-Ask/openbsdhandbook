@@ -1,6 +1,6 @@
 # 系统配置
 
-## Synopsis
+## 概述
 
 OpenBSD 的系统配置依赖少数定义良好的工具与 **/etc** 下的文本文件。设置可在运行时用 `sysctl`、`wsconsctl` 与 `rcctl` 等工具应用，也可写入 **/etc/sysctl.conf**、**/etc/wsconsctl.conf**、**/etc/rc.conf.local** 等文件持久化。此外，系统维护还包括管理服务行为、登录环境限制、引导加载程序参数、root 邮件通知与计划更新。
 

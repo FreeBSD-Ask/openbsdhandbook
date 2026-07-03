@@ -1,6 +1,6 @@
 # 网络
 
-## Synopsis
+## 概述
 
 OpenBSD 提供灵活而安全的框架来配置与管理网络接口。本章讲解如何配置有线与无线网络、IPv4 与 IPv6 地址、DNS 解析、路由、网桥与 trunk，并涵盖诊断工具与安全实践。所有配置都通过 OpenBSD 原生的文件与工具完成，例如 `ifconfig(8)`、`hostname.if(5)`、`dhclient(8)` 与 `pf(4)`。
 

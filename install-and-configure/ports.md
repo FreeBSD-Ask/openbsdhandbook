@@ -1,6 +1,6 @@
 # 软件管理：软件包与 Ports
 
-## Synopsis
+## 概述
 
 本章详细讲解 OpenBSD 上的软件管理，重点介绍用 `pkg_*` 工具安装与维护预编译软件包，以及用 `ports(7)` 从 Ports Collection 构建自定义应用，并涵盖安装后追加文件集的方法。
 
